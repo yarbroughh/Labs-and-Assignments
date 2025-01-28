@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="Week03.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+        <!--This is my navigation which I want to be right-justified and contain a dropdown for all pages exept
+    the home page and will be duplicated on all pages-->
+    <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Scout</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Life
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                  <li><a class="dropdown-item" href="adventures.html">Adventures</a></li>
+                  <li><a class="dropdown-item" href="info.html">Info</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid"> 
+      <img src="ImagesWeek03/schedule-hero.png" alt="Hero Image of Scout sleeping in a brown leather chair" class="img-fluid w-100" style="max-height: 50vh; object-fit: cover; object-position:top"> 
+    </div> 
+    <main class="container my-4">
+        <h1>My Schedule</h1>
+        <div class="table-responsive">
+          <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Exercise</th>
+                <th scope="col">Enrichment</th>
+                <th scope="col">Training</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Sunday</th>
+                <td>Hike 3 Miles</td>
+                <td>Box Shred</td>
+                <td>Here</td>
+            </tr>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>Sniff Walk 2 Miles</td>
+                <td>Fetch</td>
+                <td>Fetch</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>Fast Walk 1 Mile</td>
+                <td>Sniff Game</td>
+                <td>Wait</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>Sniff Walk 2 Miles</td>
+                <td>Fetch</td>
+                <td>Leave It</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td>Fast Walk 1 Mile</td>
+                <td>Snuffle Mat</td>
+                <td>Quiet</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td>Sniff Walk 2 Miles</td>
+                <td>Fetch</td>
+                <td>Give</td>
+            </tr>
+            <tr>
+                <th scope="row">Saturday</th>
+                <td>City Walk</td>
+                <td>Tug-of-War</td>
+                <td>Stay</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
+</footer>
+</body>
+</html>

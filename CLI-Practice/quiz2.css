@@ -1,0 +1,18 @@
+#student-header {
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid gray;
+}
+th {
+    background-color: darkgray;
+}
+tbody tr:hover {
+    background-color: darkcyan;
+    color: white;
+}

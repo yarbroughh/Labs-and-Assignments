@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The title shows up in the tab</title>
+</head>
+
+<body>
+    <header>
+        <h1>This is an H1 Heading</h1>
+    </header>
+    <main>
+        <h2> This is an H2 Heading within the main section</h2>
+    </main>
+    <Section>
+        <H3>This is an H3 in a regular section.</H3>
+        <p>This is paragraph copy below an H3 in the first section. </p><br>
+        <p>with the br tag above I added an extra line between paragraphs</p>
+        <p><strong>Here I'm using the strong tag with is the same as Bold.</strong></p>
+        <p><em>Here I'm using the em tag which is the same as i for italics.</em></p>
+        <p><Span><b>With the Span tag I can target someting specific. This is inside the Span tag with bold
+                    tag.</b></Span>Whereas this is on the same line but outside the Span tag.</p>
+        <h2>The image tag uses src to provide a link to the image and does not need a closing tag.</h2>
+        <p>Height needs to be defined on the img line otherwise the original image size will be displayed.</p>
+        <img height=500
+            src="https://img.freepik.com/free-vector/hand-drawn-pickle-cartoon-illustration_23-2150625817.jpg?t=st=1736473078~exp=1736476678~hmac=47f909fc29aed4e836afc064e08a50d0c095335c21591ddfcc2d22b8124f2526&w=1800">
+    </Section>
+    <section>Practice Section</section>
+    <ul>Unordered lists uses ul tag
+        <li>each item is surrounded by the li tag</li>
+        <li>if a ul tag it will be a bullet point as opposed to ol or ordered list which uses </li>
+    </ul>
+    <ol>Ordered list
+        <li>Here's an example of ordered list</li>
+        <li>The second item on the ordered list</li>
+    </ol>
+    <div>is a generic box and is non-semantic which means it has no inherent meaning to is</div>
+    <section>Section is a div but has a meaning</section>
+    <p>Decide if it should be semantic - do we want it to be understandable by Google? What is the level of importance
+        of the heading or item?</p>
+    <form>
+        <h3>Practice Form with All Input Field Options</h3>
+        <p>The following are common options. This is to provide practice for several common input fields that are available. I'll then apply to my main project.</p>
+        <ul>
+            <li>Text is a standard text input field</li>
+            <li>Password hides input characters</li>
+            <li>Number is for numerical input, so it has built-in number controls</li>
+            <li>Email for email addresses</li>
+            <li>Date for selecting a date</li>
+            <li>Time for selecting a time</li>
+            <li>Datetime-local for selecting both date and time</li>
+            <li>Color for selecting a color</li>
+            <li>File for flie uploads</li>
+            <li>Checkbox for multiple choice that can be checked or left unchecked</li>
+            <li>Radio for when you have a group of options that requires one choice-It's important to give each option the same Name attribute within the input element</li>
+            <li>Submit is a button to submit the form</li>
+            <li>Button is alos a button but is generic so can be used to link etc. and doesn't submit the form</li>
+            <li>Reset is a button that resets all form fields</li>
+            <li>Image uses an image as the submit button</li>
+            <li>There are several others but are more specialized so I can look those up on an as-needed basis</li>
+        </ul>
+        <h4>Input Tag Attributes</h4>
+        <p>The following list shows the different attributes that can be included within an input tag. The only required attribute is type, but when you want to submit the entered date, the name attribute is needed.></p>
+        <ul>
+            <li>Type is required and that's the Input Field Option from the list above. It defines the input element's appearance, behavior, and how data is entered</li>
+            <li>Name is rquired for form submissions. It assigns a name to hte input element and when the form is submitted the browser sends the name and its value to the server</li>
+            <li>ID is a unique identifier within the HTML document and is used wiht the for attribute in Label tags to assosciate a label with the input. JavaScript uses the ID</li>
+            <li>Value pre-fills the input. For example in checkbox and radio buttons it specifies the value that will be submitted</li>
+            <li>Placeholder displays a hint for expected input such as "Enter your Email Address" or "e.g., 555-555-1212"</li>
+            <li>Required makes the field mandatory</li>
+            <li>Disabled makes it uneditable and unclickable</li>
+            <li>Readonly makes it read-only so the user can see the value but can't modify it</li>
+            <li>maxlength sets max number of characters</li>
+            <li>min/max is used for number and date/time inputs to specify the minimum or maximum values allowed. These are entered separately as min="#" and max="#"</li>
+            <li>Step is also for number inputs and defines the interval between allowed values</li>
+            <li>List connects the input field to a datalist element which provides a list of suggested values</li>
+            <li>Pattern defines a regular expression that the input value must match</li>
+            <li>Autocomplete controls whether the broswer should try to autocomplete based on previous entries</li>
+        </ul>
+    </form>
+
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name=""email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <table>
+        <tr>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </thead>
+        </tr>
+        <tr>
+            <tbody>
+                <td>First Name 1</td>
+                <td>Last Name 1</td>
+            </tbody>
+        </tr>
+    </table>
+</body>
+</html>
