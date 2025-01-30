@@ -1,3 +1,16 @@
 ul.dropdown-menu {
     --bs-dropdown-link-active-bg: pink;
 }
+
+ul.list-group {
+    --bs-list-group-bg: pink;
+}
+
+.card-body {
+    background-color: pink;
+}
+.card .btn.btn-primary {
+    background-color: gray;
+    border-color: gray;
+
+}

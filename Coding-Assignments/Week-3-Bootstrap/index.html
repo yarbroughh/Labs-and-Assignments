@@ -28,30 +28,38 @@
                   My Life
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
-                    <li><a class="dropdown-item" href="adventures.html">Adventures</a></li>
-                    <li><a class="dropdown-item" href="info.html">Info</a></li>
+                  <li><a class="dropdown-item" href="adventures.html">Adventures</a></li>
+                  <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                  <li><a class="dropdown-item" href="info.html">Info</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-<!--This section was created to house the hero image. Need to figure out how ot remove the white gaps.-->
+<!--This section was created to house the hero image. Need to figure out how to remove the white gaps.-->
     <div class="container-fluid"> 
         <img src="ImagesWeek03/homepage-hero.png" alt="Hero Image of Scout posing on a winter hike" class="img-fluid w-100" style="max-height: 75vh; object-fit: cover; object-position:top"> 
     </div> 
 <!--Main contains all of the content before the footer, including the h1, a paragraph, h2 and an unordered list
 built with Bootstrap's list-group component-->
     <main class="container my-4">
-        <h1>Hey, I'm Scout! Welcome to my World!</h1>
-        <p>I'm a sassy and independent "mutt" (a delightful mix of Black Mouth Cur, Australian Shepherd, and Australian Cattle Dog) that was rescued by my mom and dad at just 4 months old. I've gotten a lot bigger since then and have had lots of adventures that I want to share with you.<br>
-        <h2>Expect to find:</h2>
-            <ul class="list-group">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Hey, I'm Scout! Welcome to my World!</h1>
+          <p>I'm a sassy and independent "mutt" (a delightful mix of Black Mouth Cur, Australian Shepherd, and Australian Cattle Dog) that was rescued by my mom and dad at just 4 months old. I've gotten a lot bigger since then and have had lots of adventures that I want to share with you.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Expect to find:</h2>
+            <ul class="list-group bg-pink">
                 <li class="list-group-item">Adventures and Mischief: Check out my exciting escapades, from thrilling hikes to playful backyard romps.</li>
                 <li class="list-group-item">My Schedule: I'm a super energetic dog, so need to stay busy with exercise and enrichment.</li>
                 <li class="list-group-item">Dog-Related Content: My mom found these articles on dog care, training techniques, and the latest in canine nutrition and health helpful for raising me.</li>
               </ul>
+        </div>
+      </div>
     </main>
 <!--This script was needed on all of the pages for the dropdown navigation.-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
