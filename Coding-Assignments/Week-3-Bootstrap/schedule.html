@@ -9,100 +9,111 @@
     
 </head>
 <body>
-        <!--This is my navigation which I want to be right-justified and contain a dropdown for all pages exept
-    the home page and will be duplicated on all pages-->
-    <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Scout</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  My Life
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="adventures.html">Adventures</a></li>
-                  <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
-                  <li><a class="dropdown-item" href="info.html">Info</a></li>
-                  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <!--The navigation was created using components and classes from Bootstrap, including a dropdown menu
+    for all pages except the home page and will be duplicated on all pages. It moves to a hamburger menu
+    using navbar-toggler for mobile. Bg-dark was used for the color scheme and I wanted a little pink here
+     and there so made the active color pink using my style.css file-->
+     <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Scout</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Life
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="adventures.html">Adventures</a></li>
+                <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                <li><a class="dropdown-item" href="info.html">Info</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    <div class="container-fluid"> 
+      </div>
+    </nav>
+     <!--The classes and styles from index header image were used on all other pages to ensure images displayed well
+    full-width on all screen sizes -->
+    <div class="container-fluid p-0"> 
       <img src="ImagesWeek03/schedule-hero.png" alt="Hero Image of Scout sleeping in a brown leather chair" class="img-fluid w-100" style="max-height: 50vh; object-fit: cover; object-position:top"> 
-    </div> 
-    <main class="container my-4">
-        <h1>My Schedule</h1>
-        <div class="table-responsive">
-          <table class="table table-dark table-striped">
-            <thead>
-            <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Exercise</th>
-                <th scope="col">Enrichment</th>
-                <th scope="col">Training</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">Sunday</th>
-                <td>Hike 3 Miles</td>
-                <td>Box Shred</td>
-                <td>Here</td>
-            </tr>
-            <tr>
-                <th scope="row">Monday</th>
-                <td>Sniff Walk 2 Miles</td>
-                <td>Fetch</td>
-                <td>Fetch</td>
-            </tr>
-            <tr>
-                <th scope="row">Tuesday</th>
-                <td>Fast Walk 1 Mile</td>
-                <td>Sniff Game</td>
-                <td>Wait</td>
-            </tr>
-            <tr>
-                <th scope="row">Wednesday</th>
-                <td>Sniff Walk 2 Miles</td>
-                <td>Fetch</td>
-                <td>Leave It</td>
-            </tr>
-            <tr>
-                <th scope="row">Thursday</th>
-                <td>Fast Walk 1 Mile</td>
-                <td>Snuffle Mat</td>
-                <td>Quiet</td>
-            </tr>
-            <tr>
-                <th scope="row">Friday</th>
-                <td>Sniff Walk 2 Miles</td>
-                <td>Fetch</td>
-                <td>Give</td>
-            </tr>
-            <tr>
-                <th scope="row">Saturday</th>
-                <td>City Walk</td>
-                <td>Tug-of-War</td>
-                <td>Stay</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+    </div>
+  <!--Bootstrap settings didn't allow me to use bg-pink so I added a class and custom CSS to make this section
+  have a full-width pink background-->
+    <div class="pink-background-wrapper p-4">
+    <main class="container">
+      <h1>My Schedule</h1>
+  <!--I used Bootstrap to include a responsive table that had a different background color for every other row-->
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+          <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Exercise</th>
+              <th scope="col">Enrichment</th>
+              <th scope="col">Training</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <th scope="row">Sunday</th>
+              <td>Hike 3 Miles</td>
+              <td>Box Shred</td>
+              <td>Here</td>
+          </tr>
+          <tr>
+              <th scope="row">Monday</th>
+              <td>Sniff Walk 2 Miles</td>
+              <td>Fetch</td>
+              <td>Fetch</td>
+          </tr>
+          <tr>
+              <th scope="row">Tuesday</th>
+              <td>Fast Walk 1 Mile</td>
+              <td>Sniff Game</td>
+              <td>Wait</td>
+          </tr>
+          <tr>
+              <th scope="row">Wednesday</th>
+              <td>Sniff Walk 2 Miles</td>
+              <td>Fetch</td>
+              <td>Leave It</td>
+          </tr>
+          <tr>
+              <th scope="row">Thursday</th>
+              <td>Fast Walk 1 Mile</td>
+              <td>Snuffle Mat</td>
+              <td>Quiet</td>
+          </tr>
+          <tr>
+              <th scope="row">Friday</th>
+              <td>Sniff Walk 2 Miles</td>
+              <td>Fetch</td>
+              <td>Give</td>
+          </tr>
+          <tr>
+              <th scope="row">Saturday</th>
+              <td>City Walk</td>
+              <td>Tug-of-War</td>
+              <td>Stay</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
-
-   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </div> 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--I used the same background class as the navigation for the footer color scheme and this is repeated on
+all pages.-->
 <footer>
-    <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
+  <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
 </footer>
 </body>
 </html>

@@ -9,12 +9,15 @@
     
 </head>
 <body>
-    <!--This is my navigation which I want to be right-justified and contain a dropdown for all pages exept
-    the home page and will be duplicated on all pages-->
-    <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
+    <!--The navigation was created using components and classes from Bootstrap, including a dropdown menu
+    for all pages except the home page and will be duplicated on all pages. It moves to a hamburger menu
+    using navbar-toggler for mobile. Bg-dark was used for the color scheme and I wanted a little pink here
+     and there so made the active color pink using my style.css file-->
+     <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Scout</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -39,13 +42,14 @@
     </nav>
   <!--This is a section that holds a full-width header image. I used vh and object fit so that it displayed
   in a good position without cutting off Scout for large screens and displayed fully for tablet and mobile-->
-  <div class="container-fluid"> 
-    <img src="ImagesWeek03/adventures-hero.png" alt="Hero Image of Scout sniffing flowers on a hike" class="img-fluid w-100" style="max-height: 50vh; object-fit: cover; object-position:center"> 
+  <div class="container-fluid p-0"> 
+    <img src="ImagesWeek03/adventures-hero.png" alt="Hero Image of Scout sniffing flowers on a hike" 
+    class="img-fluid w-100" style="max-height: 50vh; object-fit: cover; object-position:center"> 
   </div>
-  <!--This container holds a grid of rows where the first column is a text box with a color background and
-  next 5 columns are images that are set to be displayed at the same size. Columns had to be defined for 3
-  different screensizes in order to display all 6 on 1 row for large screens, 2 per row on tablet, and 1 per
-  row on mobile-->  
+  <!--This container was created using Bootstrap and holds a grid of rows where the first column is a text
+   box with a color background and the next 5 columns are images that are set to be displayed at the same 
+   size. Columns had to be defined for 3 different screensizes in order to display all 6 on 1 row for large
+   screens, 2 per row on tablet, and 1 per row on mobile-->  
   <main class="container my-4">
     <h1>Mischief and Mayhem</h1>
     <div class="container text-center">
@@ -57,7 +61,7 @@
           <img src="ImagesWeek03/Beach11.jpg" alt="image of Scout as a puppy on the beach" class="img-fluid">
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-          <img src="ImagesWeek03/Beach1.jpg" alt="image of Scout watching the sunseton the beach as a puppy" class="img-fluid">
+          <img src="ImagesWeek03/Beach1.jpg" alt="image of Scout watching the sunset on the beach as a puppy" class="img-fluid">
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
           <img src="ImagesWeek03/Beach3.jpg" alt="image of Scout laying in sand" class="img-fluid">
@@ -152,8 +156,10 @@
    </div>
   </main>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--I used the same background class as the navigation for the footer color scheme and this is repeated on
+all pages.-->
 <footer>
-    <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
+  <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
 </footer>
 </body>
 </html>

@@ -9,13 +9,15 @@
     
 </head>
 <body>
-    <!--This is my navigation which I want to be right-justified and contain a dropdown for all pages exept
-    the home page and will be duplicated on all pages. I wanted a black/grey/white color scheme with a little
-    pink here and there so made the active color pink using my style.css file-->
+    <!--The navigation was created using components and classes from Bootstrap, including a dropdown menu
+    for all pages except the home page and will be duplicated on all pages. It moves to a hamburger menu
+    using navbar-toggler for mobile. Bg-dark was used for the color scheme and I wanted a little pink here
+     and there so made the active color pink using my style.css file-->
     <nav class="navbar navbar-expand-lg bg-dark px-5" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Scout</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -38,12 +40,15 @@
           </div>
         </div>
       </nav>
-<!--This section was created to house the hero image. Need to figure out how to remove the white gaps.-->
-    <div class="container-fluid"> 
-        <img src="ImagesWeek03/homepage-hero.png" alt="Hero Image of Scout posing on a winter hike" class="img-fluid w-100" style="max-height: 75vh; object-fit: cover; object-position:top"> 
+<!--This section was created to house the hero image. I had to use p-0 to ensure the image was full-width
+ with no white gaps left and right. I used object-fit and object-position to make sure the image was not
+ cut off strangely on desktop and displayed fully on tablet and mobile-->
+    <div class="container-fluid p-0"> 
+        <img src="ImagesWeek03/homepage-hero.png" alt="Hero Image of Scout posing on a winter hike" 
+        class="img-fluid w-100" style="max-height: 75vh; object-fit: cover; object-position:top"> 
     </div> 
-<!--Main contains all of the content before the footer, including the h1, a paragraph, h2 and an unordered list
-built with Bootstrap's list-group component-->
+<!--Main contains all of the content before the footer, including the h1, a paragraph, h2 and an unordered
+ list built with Bootstrap's list-group component. It wraps to one column on tablet and mobile-->
     <main class="container my-4">
       <!-- Stack the columns on mobile by making one full-width and the other half-width -->
       <div class="row">
@@ -56,14 +61,16 @@ built with Bootstrap's list-group component-->
             <ul class="list-group bg-pink">
                 <li class="list-group-item">Adventures and Mischief: Check out my exciting escapades, from thrilling hikes to playful backyard romps.</li>
                 <li class="list-group-item">My Schedule: I'm a super energetic dog, so need to stay busy with exercise and enrichment.</li>
-                <li class="list-group-item">Dog-Related Content: My mom found these articles on dog care, training techniques, and the latest in canine nutrition and health helpful for raising me.</li>
+                <li class="list-group-item">Dog-Related Content: My mom found these videos on training techniques there were helpful for raising me.</li>
               </ul>
         </div>
       </div>
     </main>
 <!--This script was needed on all of the pages for the dropdown navigation.-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<footer>
+<!--I used the same background class as the navigation for the footer color scheme and this is repeated on
+all pages.-->
+    <footer>
     <p class="bg-dark text-light text-center p-3">Created using Bootstrap by Heather Yarbrough for Prominotech 2025</p>
 </footer>
 </body>

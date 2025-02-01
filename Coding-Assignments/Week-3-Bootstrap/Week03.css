@@ -14,3 +14,11 @@ ul.list-group {
     border-color: gray;
 
 }
+
+.pink-form {
+    background-color: pink;
+}
+
+.pink-background-wrapper {
+    background-color: pink;
+  }
