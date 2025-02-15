@@ -1,0 +1,93 @@
+{exp:stash:cache context="clients:entry_{structure:page:entry_id}" bundle="page_cache" unprefix="results"}
+
+  {exp:channel:entries channel="pages" require_entry="yes" disable="categories|category_fields|member_data|pagination|trackbacks"}
+
+    {if results:no_results}
+      {redirect="global/404"}
+    {/if}
+
+    {exp:stash:set parse_conditionals="yes" parse_tags="yes"}
+
+      {stash:meta}
+        {var_meta_tags}
+      {/stash:meta}
+
+      {stash:page_type}{page_type}{/stash:page_type}
+
+      {stash:billboard}
+        {var_billboard}
+      {/stash:billboard}
+
+      {stash:content}
+
+        {if page_body}
+          <div class="content-block">
+            <div class="container-fluid">
+              {exp:ce_img:bulk width="970" quality="80"}
+                {page_body}
+              {/exp:ce_img:bulk}
+            </div>
+          </div>
+        {/if}
+
+        {exp:stash:get name="inner_content"}
+
+        {var_page_content}
+
+      {/stash:content}
+
+    {/exp:stash:set}
+
+  {/exp:channel:entries}
+
+  {!-- Emded wrapper that will get all the stashed content --}
+  {stash:embed name="wrapper-default"}
+
+  {exp:stash:set parse_conditionals="yes" parse_tags="yes" no_results_prefix="results" parse_depth="2"}
+
+    {stash:inner_content}
+
+      <div class="content-block clients-block background-light-grey">
+        <div class="container-fluid">
+          <div class="row">
+
+            {exp:channel:entries channel="clients" orderby="element_order" sort="asc" dynamic="no" disable="categories|category_fields|member_data|pagination|trackbacks"}
+
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="client">
+                  <div class="image-container">
+                    <a href="{element_client_website}">
+                      {exp:ce_img:pair src="{element_image}" width="409" height="284" quality="80"}
+                        <img class="scale-up" src="{made}" width="{width}" height="{height}" alt="">
+                      {/exp:ce_img:pair}
+                    </a>
+                  </div>
+                </div>
+                <div class="clients-content">
+                  {exp:ce_img:bulk width="409" quality="80"}
+                    {element_body}
+                  {/exp:ce_img:bulk}
+                </div>
+              </div>
+
+              {if count % 4 == 0 AND count < total_results}<div class="spacer visible-lg visible-md"></div>{/if}
+              {if count % 3 == 0 AND count < total_results}<div class="spacer visible-sm"></div>{/if}
+              {if count % 2 == 0 AND count < total_results}<div class="spacer visible-xs"></div>{/if}
+
+            {/exp:channel:entries}
+
+          </div> </div> </div>  </div> <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><strong>Testimonials</strong></h3>
+            <div class="seprator"></div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+
+                </div> </div> </div> </div>
+
+      {/stash:inner_content}
+
+    {/exp:stash:set}
+
+  {/exp:stash:cache}
