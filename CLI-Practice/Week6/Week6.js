@@ -1,42 +1,62 @@
-function numProduct(num) {
-    return num * num;
-}
+// function numProduct(num) {
+//     return num * num;
+// }
 
-let num = 12;
+// let num = 12;
 
-console.log(numProduct(num));
-
-
-function power(x, y) {
-    return x ** y;
-}
-
-let x = 4;
-let y = 3;
-
-console.log(power(x,y));
-
-let list = ["Eddie", "Sarah", "Nick", "Jessica", "Olivia"];
-
-console.log(list["4"]);
-
-var fs = require("fs");
-var input = fs.readFileSync(process.stdin.fd, "utf-8").trim().split("\n");
-var a = input[0];
-var b = input[1];
-var c = input[2];
-var d = input[3];
-
-let studentList = [a, b, c, d];
-/*** DO NOT CHANGE THE CODE ABOVE THIS LINE ***/
-
-// WRITE YOUR CODE HERE 
-
-studentList.push("Mary");
+// console.log(numProduct(num));
 
 
-/*** DO NOT CHANGE THE CODE BELOW THIS LINE ***/
-function checkArray(){
-    return studentList;
-}
-console.log(checkArray());
+// function power(x, y) {
+//     return x ** y;
+// }
+
+// let x = 4;
+// let y = 3;
+
+// console.log(power(x,y));
+
+// let list = ["Eddie", "Sarah", "Nick", "Jessica", "Olivia"];
+
+// console.log(list["4"]);
+
+// var fs = require("fs");
+// var input = fs.readFileSync(process.stdin.fd, "utf-8").trim().split("\n");
+// var a = input[0];
+// var b = input[1];
+// var c = input[2];
+// var d = input[3];
+
+// let studentList = [a, b, c, d];
+// /*** DO NOT CHANGE THE CODE ABOVE THIS LINE ***/
+
+// // WRITE YOUR CODE HERE 
+
+// studentList.push("Mary");
+
+
+// /*** DO NOT CHANGE THE CODE BELOW THIS LINE ***/
+// function checkArray(){
+//     return studentList;
+// }
+// console.log(checkArray());
+
+
+
+function getTicket(money) {
+    if(money >= 10) {
+      return('🎫')
+    }
+  }
+
+function enterTheater(movieTicket) {
+    if(movieTicket === '🎫') {
+      alert('Enjoy your movie!')
+    } else {
+      alert('You need a ticket to see the movie.')
+    }
+  }
+
+let ticket = getTicket(5)
+enterTheater(ticket)
+  
