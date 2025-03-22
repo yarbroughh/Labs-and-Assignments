@@ -1,0 +1,75 @@
+body {
+    background-color: #FCF9ED;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #365941;
+}
+ 
+.navbar-brand {
+    color: #FCF9ED;
+}
+
+.card {
+    margin-top: 3rem;
+    background-color: #5FABA3;
+}
+
+#parks {
+    border-radius: .375rem;
+    background-color: #5FABA3;
+    padding: 1rem;
+}
+
+label {
+    font-size: 2rem;
+    color: #365941; 
+}
+
+h2 {
+    color: #365941;
+    font-size: 2rem;
+}
+
+.table > tbody > tr > th {
+    background-color: #5FABA3;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color: #9CCAC4;
+}
+
+.table-striped > tbody > tr:nth-of-type(even)> td {
+    background-color: #D8E9E5;
+}
+
+.form-control {
+    background-color: #FCF9ED;
+}
+
+.form-control:focus {
+    background-color: #FCF9ED;
+    border-color: #5FABA3;
+    color: #365941;
+    box-shadow: none;
+}
+
+.form-control btn {
+    margin: 30px;
+}
+
+.btn {
+    background-color:#365941;
+    color: #FCF9ED;
+}
+
+.btn:hover {
+    background-color:#457351;
+    color: #FCF9ED;
+}
+
+.btn:active {
+    background-color: #365941;
+    color: #FCF9ED;
+}

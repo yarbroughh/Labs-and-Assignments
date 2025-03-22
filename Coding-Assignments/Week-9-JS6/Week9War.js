@@ -1,5 +1,5 @@
-//Create class for individual cards. The elements in the constructor are named the same as after the =
-//but "this" can be named differently. 
+//Create class for individual cards. The elements in the constructor are named the same as after 
+// the = but "this" can be named differently. 
 class Card {
     constructor (cardSuit, cardNumber) {
         this.cardSuit = cardSuit;
@@ -20,8 +20,9 @@ class Deck {
     this.createDeck();
     this.shuffle();
     }
-    //This is the method within the class to combine the suits and numbers using a for loop within a 
-    // for loop to go through the arrays and combine the suits and numbers using push to create the deck.
+    //This is the method within the class to combine the suits and numbers using a for loop within
+    //a for loop to go through the arrays and combine the suits and numbers using push to create
+    //the deck.
     createDeck () {
         for (const suit of this.suits) {
             for (const number of this.numbers) {

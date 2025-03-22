@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 - JS & DOM Coding Assignment - Table</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="custom.css"> 
+</head>
+<body>
+
+    <nav class="navbar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Park Cleanup</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0"> 
+        <img src="huff_park_image.jpg" alt="Hero Image of cattails in Huff Park" 
+        class="img-fluid w-100" style="max-height: 50vh; object-fit: cover; object-position:middle"> 
+    </div> 
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-park-name">Add a New Park to Accept Volunteers</label>
+                        <input type="text" class="form-control" id="new-park-name">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="new-park" class="btn form-control mt-2">Add Park</button>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="parks"></div>
+</div>
+    <!--script lines to access my and bootstrap's javascript files-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
