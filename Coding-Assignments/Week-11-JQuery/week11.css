@@ -1,0 +1,114 @@
+body {
+    background-color: #EAE2B7 !important;
+}
+
+/*FONTS*/
+/*The Google Font I chose*/
+.slackey-regular {
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1 {
+    font-family: Slackey;
+    font-size: 68px !important;
+    color: #003049 !important;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: Slackey;
+    font-size: 30px !important;
+    color: #003049 !important;
+}
+
+#gameBoard {
+    background-color: #FCBF49;
+    width: 450px;
+    border-radius: 6px;
+}
+
+/*I wanted the grid to look how a board is traditionally drawn, so I had to use custom CSS instead 
+of bootstrap's "border" I applied a bottom and right border and then removed those from the bottom
+row and right column as necessary*/
+.square {
+    height: 150px;
+    border-right: 6px solid #003049;
+    border-bottom: 6px solid #003049;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Remove unnecessary borders */
+#square1,
+#square2,
+#square3 {
+    border-top: none;
+}
+
+#square1,
+#square4,
+#square7 {
+    border-left: none;
+}
+
+#square3,
+#square6,
+#square9 {
+    border-right: none;
+}
+
+#square7,
+#square8,
+#square9 {
+    border-bottom: none;
+}
+
+#player-mark {
+    font-family: Slackey;
+    font-size: 90px !important;
+    color: #D62828 !important; 
+}
+
+.x-mark {
+    font-family: Slackey !important;
+    font-size: 70px !important;
+    color: #F77F00 !important; 
+}
+
+.o-mark {
+    font-family: Slackey !important;
+    font-size: 70px !important;
+    color: #F77F00 !important; 
+}
+
+#playAlert {
+    font-family: Slackey;
+    font-size: 50px;
+    color: #D62828;
+    background-color: #FCBF49;
+    border: 6px solid #003049;  
+    width: 450px;
+    border-radius: 6px;
+}
+
+#playAgainBtn {
+    font-family: Slackey;
+    font-size: 50px;
+    color: #003049;
+    background-color: #F77F00;
+    border: none;
+    border-radius: 6px;
+}
+
+#resetBtn {
+    font-family: Slackey;
+    font-size: 50px;
+    color: #003049;
+    background-color: #F77F00;
+    border: 6px solid #003049;
+    width: 450px;
+    border-radius: 6px;
+}
+

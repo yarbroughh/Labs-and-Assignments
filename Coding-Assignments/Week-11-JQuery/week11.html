@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Coding Assignment - Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Week11.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <main>
+<!--Use bootstrap including for the alert to create a grid of 9 squares. Give the squares 
+individual IDs to target with Javascript. Make them buttons, not divs, so I can add event listeners-->
+    <div class="container">
+        <h1 class="text-center mt-4">Tic Tac Toe</h1>
+        <h2 class="text-center mt-4">It's <span id="player-mark"></span>'s Turn</h2>
+    </div>
+        <div class="container">
+            <div class="mx-auto mt-4" id="gameBoard">
+                <!--I wanted the alert to display at the top of the board, rather than across it-->
+                <div id="playAlert" class="alert text-center justify-content-center" role="alert">
+                    <button id="playAgainBtn" type="button" class="btn"aria-label="Close"></button>
+                </div>
+                <div class="row g-0">
+                    <button class="square col-4" id="square1"></button>
+                    <button class="square col-4" id="square2"></button>
+                    <button class="square col-4" id="square3"></button>
+                </div>
+                <div class="row g-0"> 
+                    <button class="square col-4" id="square4"></button>
+                    <button class="square col-4" id="square5"></button>
+                    <button class="square col-4" id="square6"></button>
+                </div>
+                <div class="row g-0">
+                    <button class="square col-4" id="square7"></button>
+                    <button class="square col-4" id="square8"></button>
+                    <button class="square col-4" id="square9"></button>
+                </div>
+            </div>
+            <!--Add a button to allow the game to be reset at any time-->
+            <div class="d-flex justify-content-center">
+                <button class="mt-4" id="resetBtn" type="button" aria-label="Reset Game">Reset Game</button>
+            </div>
+        </div>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="week11.js"></script>
+</body>
+</html>
