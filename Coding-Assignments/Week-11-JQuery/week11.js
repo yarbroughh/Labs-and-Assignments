@@ -38,7 +38,6 @@ squares.forEach((square) => {
     square.addEventListener("click", takeTurn);
 })
 
-
 //Use a ternary operator here as well, to determine whether an X or O will be 
 //placed in the square
 function takeTurn(event) {
@@ -52,6 +51,7 @@ function takeTurn(event) {
 
     if (clickedSquare.textContent === "") {
         clickedSquare.textContent = currentPlayer.mark;
+
 //Learned that I need to add a class to the marks when they're added to a square in 
 //order to target them with CSS
         clickedSquare.classList.add(currentPlayer.mark === "X" ? "x-mark" : "o-mark");
@@ -100,7 +100,6 @@ function checkGameStatus() {
     checkWin(boardSquare3, boardSquare5, boardSquare7)) {
     
     // Game won when 3 squares match and a button is displayed to reset the game
-      //DELETE COMMENT: I removed <button onclick='resetGame()'>Play Again</button> since we have a bootstrap popup
         playAlert.innerHTML = (currentPlayer === playerX ? playerO.mark + " wins! <button id='playAgainBtn'>Play Again</button>" 
             : playerX.mark + " wins! <button id='playAgainBtn'>Play Again</button>");
         playAlert.classList.remove("alert-warning", "alert-danger");
@@ -114,6 +113,7 @@ function checkGameStatus() {
             square.disabled = true;
         });
 
+        //Check to see if all squares are used to determine a tie
     } else if (
         boardSquare1.textContent !== "" &&
         boardSquare2.textContent !== "" &&
