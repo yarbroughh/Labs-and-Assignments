@@ -1,0 +1,60 @@
+{
+  "pastVacations": [
+    {
+      "destination": "New Orleans, Louisiana",
+      "monthTraveled": "March",
+      "rating": "8",
+      "thoughts": "I love New Orleans most of the year outside of July and August which are too hot and muggy, but March can be a little cold and rainy.",
+      "id": "2"
+    },
+    {
+      "destination": "Amsterdam, Netherlands",
+      "monthTraveled": "June",
+      "rating": "9",
+      "thoughts": "The weather is always delightful during summer in Amsterdam.",
+      "id": "3"
+    },
+    {
+      "destination": "Au Train, Michigan",
+      "monthTraveled": "August",
+      "rating": "8",
+      "thoughts": "The U.P. is a great place to escape the stifling heat of summer. Great beaches and almost always a breeze.",
+      "id": "4"
+    },
+    {
+      "destination": "Savannah, Georgia",
+      "monthTraveled": "April",
+      "rating": "10",
+      "thoughts": "Perfect time to see flowers blooming and have temperate weather.",
+      "id": "5"
+    },
+    {
+      "destination": "Chicago, Illinois",
+      "monthTraveled": "December",
+      "rating": "8",
+      "thoughts": "It's cold, but the holiday lights make it worth it!",
+      "id": "da13"
+    },
+    {
+      "id": "9d3e",
+      "destination": "Washington, DC",
+      "monthTraveled": "April",
+      "rating": "10",
+      "thoughts": "The weather is lovely in spring and if you go at the end of March or beginning of April, the cherry blossoms are at peak."
+    },
+    {
+      "id": "0df3",
+      "destination": "Cork, Ireland",
+      "monthTraveled": "July",
+      "rating": "9",
+      "thoughts": "Perfect! The ocean is freezing all year round, but the weather is perfect."
+    },
+    {
+      "id": "0cfa",
+      "destination": "Paris, France",
+      "monthTraveled": "October",
+      "rating": "7",
+      "thoughts": "Spring is better"
+    }
+  ]
+}

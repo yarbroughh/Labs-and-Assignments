@@ -1,0 +1,78 @@
+#hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: Atma;
+    font-weight: 700;
+    font-size: 100px;
+    color:#0D2330;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 40px;
+    color: #4ED08D;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 25px;
+    color:#0D2330;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-weight: 300t;
+    font-style: italic;
+    font-size: 15px;
+    color:#0D2330;
+}
+
+#past-vacations .row {
+    background-color: #D5D7D7;
+}
+
+.input-area {
+    background-color: #DFF6EA;
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+.form-control {
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 15px;
+    color:#0D2330;
+}
+
+label {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    color:#0D2330;
+}
+
+.btn {
+    background-color: #0D2330;
+    color: #fff;
+    font-family: Montserrat;
+    margin-top: 3px;
+}
+
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+#past-vacations-container {
+    width: 100%;
+    background-color: #DFF6EA; 
+    padding: 40px; 
+}
