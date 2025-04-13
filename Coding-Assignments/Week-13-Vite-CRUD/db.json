@@ -1,0 +1,25 @@
+{
+  "pastVacations": [
+    {
+      "destination": "Savannah, Georgia",
+      "monthTraveled": "April",
+      "rating": "10",
+      "thoughts": "Perfect time to see flowers blooming and have temperate weather.",
+      "id": "5"
+    },
+    {
+      "destination": "Chicago, Illinois",
+      "monthTraveled": "December",
+      "rating": "8",
+      "thoughts": "It's cold, but the holiday lights make it worth it!",
+      "id": "da13"
+    },
+    {
+      "id": "9d3e",
+      "destination": "Washington, DC",
+      "monthTraveled": "April",
+      "rating": "10",
+      "thoughts": "The weather is lovely in spring and if you go at the end of March or beginning of April, the cherry blossoms are at peak."
+    }
+  ]
+}

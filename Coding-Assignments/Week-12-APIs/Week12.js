@@ -19,7 +19,6 @@ async function getWeatherData() {
          //Call the forecast data to display on page the value of the API's data is passed
          //to both the forecast and the packing list functions
         displayForecastData(result);
-        createPackingList(result); // Pass the data to createPackingList()
     } catch (error) {
         console.error(error);
     }

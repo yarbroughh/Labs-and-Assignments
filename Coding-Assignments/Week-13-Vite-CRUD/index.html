@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-8">
+              <img id="hero-image" src="man_on_raft.jpg" alt="Man on makeshift raft at sea" class="img-fluid mb-3"/>
+          </div>
+          <div class="col-md-4">
+              <h1 class="text-center mt-4">Don't End Up Like This Guy</h1>
+              <hr>
+              <h2 class="text-center mt-4">Plan Your Weather-Proof Vacation</h2>
+          </div>
+      </div>
+  <div class="input-area p-4">
+      <div class="row">
+          <div class="col-12">
+              <h3>Let us know where you're heading and when you're leaving and returning.</h3>
+              <h4>Note that we can only forecast up to a 15-day period.</h4>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-4">
+              <label for="location">Location:</label>
+              <input type="text" id="location" class="form-control">
+          </div>
+          <div class="col-4">
+              <label for="startDate">Start Date:</label>
+              <input type="date" id="startDate" class="form-control">
+          </div>
+          <div class="col-4">
+              <label for="endDate">End Date:</label>
+              <input type="date" id="endDate" class="form-control">
+          </div>
+      </div>
+      <div class="row mt-4">
+          <button id="getWeather" class="btn mt-3">What's the weather for my vacation?</button>
+      </div>
+  </div>
+      <div class="row mt-4">
+          <div>
+              <div id="weatherResults">
+                  <h2>Vacation Forecast</h2>
+                  <h4>Enter your destination and vacation dates above to view the forecast.</h4>
+                  <div id="displayForecast"></div>
+              </div>
+              <div class="mt-4" id="past-vacations-container">
+                  <h2>Past Vacations</h2>
+                  <h4>Read thoughts on previous vacations or add your own!</h4>
+                  <div id="add-vacation"></div>
+                  <div id="past-vacations"></div>
+              </div>
+          </div>
+      </div>  
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+    <div></div>
+  </body>
+</html>
